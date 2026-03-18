@@ -38,26 +38,37 @@ Returns: CYCLE_APPROVED / CYCLE_FAILED with evidence protocol and accountability
 ```
 Returns: COMPLIANT / NON_COMPLIANT with specific violations and suggested fixes.
 
-## Built-in Frameworks
+## Built-in Frameworks (14)
 
-| Framework | What It Does |
-|-----------|-------------|
-| **First Principles** | Break down to fundamental truths, question every assumption |
-| **Inversion** | What would guarantee failure? Is the approach doing any of that? |
-| **5-Whys** | Drill to root cause through iterative "Why?" questioning |
-| **Occam's Razor** | Find the simplest explanation/approach that fits all facts |
-| **Via Negativa** | Improve by removing — what can be cut without losing value? |
-| **One Thing** | Identify the single highest-leverage action |
-| **Deep Dive** | Thorough technical investigation — read files, trace data flows |
-| **Technical Research** | Validate implementation approach against established practices |
-| **Tri-Strike** | 3-directional convergence — triangulate expectations, capabilities, and observations |
+### Classic Thinking (9)
+| Framework | Category | What It Does |
+|-----------|----------|-------------|
+| **First Principles** | Deconstruction | Break down to fundamental truths, question every assumption |
+| **5-Whys** | Deconstruction | Drill to root cause through iterative "Why?" questioning |
+| **Inversion** | Strategy | What would guarantee failure? Is the approach doing any of that? |
+| **Occam's Razor** | Strategy / Refinement | Find the simplest explanation/approach that fits all facts |
+| **One Thing** | Strategy | Identify the single highest-leverage action |
+| **Via Negativa** | Refinement | Improve by removing — what can be cut without losing value? |
+| **Deep Dive** | Verification | Thorough technical investigation — read files, trace data flows |
+| **Technical Research** | Verification | Validate implementation approach against established practices |
+| **Tri-Strike** | Verification | 3-directional convergence — triangulate expectations, capabilities, and observations |
+
+### Agentic Era (5)
+| Framework | What It Catches |
+|-----------|----------------|
+| **6 Thinking Hats** | Perspective collapse — cycles through 6 de Bono perspectives (Facts, Intuition, Caution, Benefits, Creativity, Process) |
+| **Gap Finder** | Confident omission — what's missing that should be there? |
+| **Blind Spot** | Frame lock — what's invisible from the current paradigm? |
+| **Devil's Advocate** | Vaporware — does this actually work, or just sound like it does? |
+| **Drift Detector** | Goal/reasoning/constraint drift — did the agent do what was asked? |
 
 ## Configuration
 
-### Framework count
+### Phase-aware defaults
 ```
-/validate "my approach" --frameworks 3      # Use 3 frameworks (faster)
-/validate "my approach" --frameworks 9      # Use all 9 (thorough)
+/validate "my approach"              # Auto: Exploration + Deconstruction + Strategy (5 frameworks)
+/think @output.json                  # Auto: Verification + Agentic Audit (5 frameworks)
+/validate "my approach" --frameworks 14   # All 14 (thorough)
 ```
 
 ### Specific frameworks

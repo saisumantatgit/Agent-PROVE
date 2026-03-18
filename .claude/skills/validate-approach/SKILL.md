@@ -15,14 +15,14 @@ Stress-test a proposed approach using multiple thinking frameworks BEFORE any ex
 
 ## Default Frameworks
 
-If `--framework-names` not specified, uses these 5:
-1. first-principles
-2. inversion
-3. five-whys
-4. occams-razor
-5. via-negativa
+If `--framework-names` not specified, auto-selects from Exploration + Deconstruction + Strategy phases:
+1. six-thinking-hats (Exploration)
+2. first-principles (Deconstruction)
+3. five-whys (Deconstruction)
+4. inversion (Strategy)
+5. occams-razor (Strategy)
 
-All 9 available: first-principles, inversion, five-whys, occams-razor, via-negativa, one-thing, deep-dive, technical-research, tri-strike
+All 14 available: first-principles, inversion, five-whys, occams-razor, via-negativa, one-thing, deep-dive, technical-research, tri-strike, six-thinking-hats, gap-finder, blind-spot, devils-advocate, drift-detector
 
 ## Workflow
 

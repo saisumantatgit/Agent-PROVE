@@ -1,0 +1,20 @@
+{
+  "name": "thinking-framework-orchestrator",
+  "description": "Multi-framework thinking validation, per-cycle auditing, and evidence-based accountability for Claude Code. 14 frameworks across 6 phases — the only thinking framework plugin built for the agentic era.",
+  "version": "1.1.0",
+  "author": {
+    "name": "Sai Sumanth Battepati"
+  },
+  "homepage": "https://github.com/saisumanthbattepati/thinking-framework-orchestrator",
+  "license": "MIT",
+  "keywords": [
+    "claude-code-plugin",
+    "thinking-frameworks",
+    "validation",
+    "audit",
+    "evidence-protocol",
+    "agentic-audit",
+    "first-principles",
+    "devils-advocate"
+  ]
+}

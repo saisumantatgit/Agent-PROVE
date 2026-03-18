@@ -6,7 +6,7 @@ A Claude Code plugin that applies structured multi-framework thinking to validat
 
 Four layers, bottom to top:
 
-1. **Framework Agents** (8 built-in, user-extensible) — Independent thinking lenses. Each applies ONE framework and returns PASS/FAIL with cited evidence. Located in `.claude/agents/`.
+1. **Framework Agents** (14 built-in, user-extensible) — Independent thinking lenses across 6 categories. Each applies ONE framework and returns PASS/FAIL with cited evidence. Located in `.claude/agents/`.
 2. **Orchestration Agents** — T1 Validator (pre-execution) and Cycle Auditor (during execution). They dispatch framework agents in parallel and synthesize verdicts.
 3. **Skills** — Workflow logic for validate-approach, think-cycle, evidence-audit. Located in `.claude/skills/`.
 4. **Commands** — User-facing entry points: `/validate`, `/think`, `/audit`. Located in `.claude/commands/`.
@@ -45,6 +45,21 @@ Before presenting ANY result:
 **Framework Agents:**
 - `PASS` — No issues found under this framework
 - `FAIL` — Issues found, with specifics and evidence
+
+## Framework Taxonomy (Phase-Aware)
+
+| Category | Phase | Frameworks | Default For |
+|----------|-------|-----------|-------------|
+| Exploration | Brainstorming | six-thinking-hats | /validate |
+| Deconstruction | Problem Understanding | first-principles, five-whys | /validate |
+| Strategy | Approach Design | inversion, occams-razor, one-thing | /validate |
+| Verification | Implementation Validation | deep-dive, technical-research, tri-strike | /think |
+| Refinement | Reduction & Tightening | via-negativa, occams-razor | manual |
+| Agentic Audit | AI Work Audit | gap-finder, blind-spot, devils-advocate, drift-detector | /think |
+
+`/validate` auto-selects: Exploration + Deconstruction + Strategy (5 frameworks)
+`/think` auto-selects: Verification + Agentic Audit (5 frameworks)
+Override with `--framework-names` for any combination.
 
 ## Evidence Protocol
 

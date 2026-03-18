@@ -36,6 +36,11 @@ Available framework agents (in `.claude/agents/`):
 - `deep-dive` — technical investigation
 - `technical-research` — implementation approach validation
 - `tri-strike` — 3-directional convergence audit (expectations vs capabilities vs observations)
+- `six-thinking-hats` — 6-perspective evaluation (facts, intuition, caution, optimism, creativity, process)
+- `gap-finder` — systematic scan for missing functionality, unhandled inputs, absent requirements
+- `blind-spot` — frame challenge (what's invisible from the current paradigm?)
+- `devils-advocate` — adversarial substance verification (prove it or retract it)
+- `drift-detector` — trajectory analysis (does output still match original intent?)
 
 ### Step 2: Collect and Analyze Results
 

@@ -17,12 +17,14 @@ Dispatch thinking framework agents to audit the output of an execution cycle. En
 
 ## Default Frameworks
 
-If `--framework-names` not specified, uses these 3:
-1. first-principles
-2. inversion
-3. occams-razor
+If `--framework-names` not specified, auto-selects from Verification + Agentic Audit phases:
+1. deep-dive (Verification)
+2. tri-strike (Verification)
+3. gap-finder (Agentic Audit)
+4. devils-advocate (Agentic Audit)
+5. drift-detector (Agentic Audit)
 
-All 9 available: first-principles, inversion, five-whys, occams-razor, via-negativa, one-thing, deep-dive, technical-research, tri-strike
+All 14 available: first-principles, inversion, five-whys, occams-razor, via-negativa, one-thing, deep-dive, technical-research, tri-strike, six-thinking-hats, gap-finder, blind-spot, devils-advocate, drift-detector
 
 ## Workflow
 
