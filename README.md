@@ -20,15 +20,27 @@ cp -r thinking-framework-orchestrator/ ~/.claude/plugins/thinking-framework-orch
 
 ## Quick Start
 
-### Validate an approach before execution
+### Explore an idea
+```
+/brainstorm "Should we use microservices or a monolith?"
+```
+Cycles through 6 perspectives (Facts, Intuition, Caution, Benefits, Creativity, Process).
+
+### Validate an approach
 ```
 /validate "1. Parse all config files 2. Extract settings by regex 3. Migrate to new schema"
 ```
 Returns: VALIDATED / VALIDATED_WITH_ADJUSTMENTS / REJECTED with per-framework analysis.
 
+### Apply one lens
+```
+/consider inversion "Our plan to migrate the database over the weekend"
+```
+Runs a single framework directly — no orchestration, just one focused question.
+
 ### Audit a cycle's output
 ```
-/think @data/output.json --frameworks 3 --expected-count 500
+/think @data/output.json --expected-count 500
 ```
 Returns: CYCLE_APPROVED / CYCLE_FAILED with evidence protocol and accountability checks.
 
@@ -37,6 +49,18 @@ Returns: CYCLE_APPROVED / CYCLE_FAILED with evidence protocol and accountability
 /audit @docs/report.md --strict
 ```
 Returns: COMPLIANT / NON_COMPLIANT with specific violations and suggested fixes.
+
+### Full end-of-work review
+```
+/review @src/auth/middleware.ts --input-files src/auth/jwt.ts,tests/auth.test.ts
+```
+Returns: SHIP_READY / FRAMEWORK_ISSUES / EVIDENCE_ISSUES — combines /think + /audit.
+
+### Discover frameworks
+```
+/frameworks
+```
+Lists all 14 frameworks by category with usage examples.
 
 ## Built-in Frameworks (14)
 

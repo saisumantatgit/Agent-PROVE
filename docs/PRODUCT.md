@@ -18,13 +18,34 @@ This plugin extracts that methodology and makes it available for *every* project
 
 ## What It Does
 
-**Three commands. One discipline.**
+**Seven commands. One complete journey — from "I have a vague idea" to "ship it."**
 
-`/validate` — Before you build, prove your approach survives scrutiny. Five independent thinking frameworks stress-test your plan in parallel. VALIDATED, or go back to the drawing board.
+### Before Work
+`/brainstorm` — Explore an idea from 6 perspectives before you even have an approach. Facts, intuition, caution, benefits, creativity, process — all at once.
 
-`/think` — While you build, audit every cycle. Did the output match expectations? Is every claim backed by evidence? Three frameworks challenge your work, and the evidence protocol catches what they miss.
+`/validate` — You have an approach? Prove it survives scrutiny. Five frameworks stress-test your plan in parallel. VALIDATED, or go back to the drawing board.
 
-`/audit` — When you're done, verify the receipts. Every factual claim cited. Every number derived. Every "not found" backed by search evidence. Zero uncited inference. Period.
+### During Work
+`/consider [framework]` — Apply one specific thinking lens, anytime. `/consider inversion "my API design"` — no orchestration, just one focused question.
+
+`/think` — Audit a cycle's output. Did it match expectations? Is every claim backed by evidence? Five frameworks challenge your work, and the evidence protocol catches what they miss.
+
+### After Work
+`/audit` — Verify the receipts. Every factual claim cited. Every number derived. Every "not found" backed by search evidence. Zero uncited inference. Period.
+
+`/review` — Full final review. Combines `/think` (framework analysis) + `/audit` (evidence compliance) in one pass. SHIP_READY, or here's exactly what to fix.
+
+### Anytime
+`/frameworks` — See all 14 frameworks by category. Can't use what you don't know exists.
+
+### Why these 7 and not 10?
+
+We deliberately didn't build `/drift`, `/refine`, or `/status`:
+- `/drift` → `/consider drift-detector` covers it
+- `/refine` → `/consider via-negativa` + `/consider occams-razor` covers it
+- `/status` → Not a thinking framework concern. Other plugins handle this.
+
+Every command exists because it serves a distinct user moment. No redundancy, no aliases, no ceremony.
 
 ---
 
