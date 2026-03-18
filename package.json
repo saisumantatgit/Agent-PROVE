@@ -1,0 +1,14 @@
+{
+  "name": "thinking-framework-orchestrator",
+  "version": "1.0.0",
+  "description": "Multi-framework thinking validation, per-cycle auditing, and evidence-based accountability for Claude Code",
+  "keywords": [
+    "claude-code-plugin",
+    "thinking-frameworks",
+    "validation",
+    "audit",
+    "evidence-protocol"
+  ],
+  "author": "Sai Sumanth Battepati",
+  "license": "MIT"
+}
