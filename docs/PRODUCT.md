@@ -36,23 +36,31 @@ No build step. No compiled code. No npm install. The entire plugin is structured
 
 **This is intentional.** The value isn't in code — it's in the *quality of the questions asked*. First Principles (Aristotle, 4th century BC) doesn't need a TypeScript wrapper.
 
-### 9 Frameworks. All Independent. All Parallel.
+### 14 Frameworks. 6 Categories. Phase-Aware.
 
 Each framework is a separate agent running its own analysis. No sequential bottlenecks. No framework waiting on another. The orchestrator dispatches all of them simultaneously and synthesizes the results.
 
-| Framework | The Question It Asks |
-|-----------|---------------------|
-| **First Principles** | What's actually true vs. what are we assuming? |
-| **Inversion** | What would guarantee failure? Are we doing any of that? |
-| **5-Whys** | Why is this happening? No, *really* — why? |
-| **Occam's Razor** | Is there a simpler way that still works? |
-| **Via Negativa** | What can we remove without losing value? |
-| **One Thing** | If we could only do one thing, what has the most leverage? |
-| **Deep Dive** | What do the actual files say? (Not what we assume they say.) |
-| **Technical Research** | Is the implementation approach sound against established practices? |
-| **Tri-Strike** | Do expectations, capabilities, and observations all agree? |
+**The right frameworks fire at the right time.** `/validate` auto-selects from Exploration + Deconstruction + Strategy. `/think` auto-selects from Verification + Agentic Audit. You don't pick frameworks — the phase picks them for you.
 
-Need a 10th? Write a markdown file. It's available immediately.
+| Category | Phase | Frameworks |
+|----------|-------|-----------|
+| **Exploration** | Brainstorming | 6 Thinking Hats |
+| **Deconstruction** | Problem Understanding | First Principles, 5-Whys |
+| **Strategy** | Approach Design | Inversion, Occam's Razor, One Thing |
+| **Verification** | Implementation Validation | Deep Dive, Technical Research, Tri-Strike |
+| **Refinement** | Reduction & Tightening | Via Negativa, Occam's Razor |
+| **Agentic Audit** | AI Work Audit | Gap Finder, Blind Spot, Devil's Advocate, Drift Detector |
+
+The first 9 frameworks are classic mental models — Aristotle to Taleb. The last 4 are **purpose-built for the agentic era**, because AI agents fail in ways humans don't:
+
+| Agentic Failure Mode | Framework | The Question It Asks |
+|---------------------|-----------|---------------------|
+| Skips edge cases | **Gap Finder** | What did the agent not even consider? |
+| Can't see outside its frame | **Blind Spot** | What is the agent incapable of seeing? |
+| Produces confident nonsense | **Devil's Advocate** | Does this actually work, or is it vaporware? |
+| Silently changes the task | **Drift Detector** | Did the agent do what was asked, or something else? |
+
+Need a 15th? Write a markdown file. It's available immediately.
 
 ### Configurable Depth
 
@@ -62,7 +70,7 @@ Not every decision needs 9 frameworks.
 - Full scrutiny: `/validate "my approach" --frameworks 9`
 - Specific lenses: `/think "problem" --framework-names inversion,five-whys`
 
-Default: **5 frameworks** for pre-execution validation. **3 frameworks** for per-cycle auditing. Enough rigour to catch real issues. Not so much that it slows you down.
+Default: phase-aware selection — `/validate` pulls from Exploration + Deconstruction + Strategy. `/think` pulls from Verification + Agentic Audit. Override anytime with `--frameworks N` or `--framework-names`.
 
 ### Escalation That Stops Bad Work Early
 
@@ -96,4 +104,34 @@ The methodology is domain-agnostic. The rigour is universal.
 
 ---
 
-*MIT License. [Prior art acknowledged.](docs/adr/001-framework-naming-and-prior-art.md)*
+## Where This Fits
+
+Every top Claude Code plugin owns ONE thing:
+
+| Plugin | What It Owns | Stars |
+|--------|-------------|-------|
+| Superpowers | Developer discipline (TDD, code review, worktrees) | 95K |
+| BMAD | Full agile lifecycle (personas, phase gates) | 41K |
+| GSD | Context engineering (fresh windows, wave execution) | 34K |
+| claude-mem | Persistent cross-session memory | 38K |
+| **This plugin** | **Structured, evidence-based thinking** | — |
+
+We don't enforce TDD — Superpowers does that. We don't manage sprints — BMAD does that. We don't manage context windows — GSD does that. We don't persist memory — claude-mem does that.
+
+**We make agents think before they act, prove their work while they act, and catch their own blind spots after they act.** Nobody else does this.
+
+### What We Deliberately Don't Build
+
+| Not Building | Why |
+|---|---|
+| Python/TypeScript execution layer | Top plugins (Superpowers, BMAD, GSD) are primarily markdown. Validated by the ecosystem. |
+| Persistent state/memory | claude-mem exists. Don't reinvent. |
+| Community marketplace | Earned at scale (Superpowers at 95K★). Premature for v1. |
+| Full agile methodology | BMAD owns this space. We think, we don't manage sprints. |
+| Context window management | GSD owns this space. We validate thinking, we don't manage tokens. |
+
+These aren't gaps — they're borders. Knowing what you're *not* is how you stay sharp at what you *are*.
+
+---
+
+*MIT License. [Prior art acknowledged.](docs/adr/001-framework-naming-and-prior-art.md) | [Competitive landscape.](docs/research/001-competitive-landscape-and-gap-analysis.md)*
