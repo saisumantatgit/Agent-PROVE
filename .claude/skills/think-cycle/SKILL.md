@@ -22,7 +22,7 @@ If `--framework-names` not specified, uses these 3:
 2. inversion
 3. occams-razor
 
-All 8 available: first-principles, inversion, five-whys, occams-razor, via-negativa, one-thing, deep-dive, technical-research
+All 9 available: first-principles, inversion, five-whys, occams-razor, via-negativa, one-thing, deep-dive, technical-research, tri-strike
 
 ## Workflow
 

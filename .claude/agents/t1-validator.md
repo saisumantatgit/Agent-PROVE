@@ -35,6 +35,7 @@ Available framework agents (in `.claude/agents/`):
 - `one-thing` — leverage analysis
 - `deep-dive` — technical investigation
 - `technical-research` — implementation approach validation
+- `tri-strike` — 3-directional convergence audit (expectations vs capabilities vs observations)
 
 ### Step 2: Collect and Analyze Results
 

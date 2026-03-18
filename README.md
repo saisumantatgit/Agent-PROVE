@@ -50,13 +50,14 @@ Returns: COMPLIANT / NON_COMPLIANT with specific violations and suggested fixes.
 | **One Thing** | Identify the single highest-leverage action |
 | **Deep Dive** | Thorough technical investigation — read files, trace data flows |
 | **Technical Research** | Validate implementation approach against established practices |
+| **Tri-Strike** | 3-directional convergence — triangulate expectations, capabilities, and observations |
 
 ## Configuration
 
 ### Framework count
 ```
 /validate "my approach" --frameworks 3      # Use 3 frameworks (faster)
-/validate "my approach" --frameworks 8      # Use all 8 (thorough)
+/validate "my approach" --frameworks 9      # Use all 9 (thorough)
 ```
 
 ### Specific frameworks
