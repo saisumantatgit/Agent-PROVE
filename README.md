@@ -120,6 +120,10 @@ The core principle: **every claim must cite a source.**
 
 This plugin extracts the methodology developed during Mission 1086 — a project that classified 1,086 regulatory data points with zero uncited inference. The thinking framework approach caught critical errors before execution (wrong data source type) and during execution (misclassified items, retired entries). The methodology is domain-agnostic and works for any project requiring rigorous, evidence-based execution.
 
+## Prior Art
+
+Framework names reference well-known mental models (First Principles — Aristotle, Inversion — Munger/Stoics, 5-Whys — Toyota, Occam's Razor — 14th century, Via Negativa — Taleb, One Thing — Keller). The [`consider/` commands](https://github.com/glittercowboy/taches-cc-resources) in taches-cc-resources by Lex Christopherson apply similar models as conversational prompts — this plugin builds a different thing: structured orchestration with evidence-based accountability. See [ADR-001](docs/adr/001-framework-naming-and-prior-art.md) for the full assessment.
+
 ## License
 
 MIT
