@@ -1,77 +1,77 @@
 # Roadmap: Thinking Framework Orchestrator
 
-## Overview
+## Milestones
 
-Build a Claude Code plugin that extracts the Mission 1086 thinking framework methodology into a reusable, repo-agnostic tool. The plugin ships with 8 built-in thinking frameworks, a T1 pre-execution validator, per-cycle audit orchestration, and evidence protocol enforcement. Six phases take us from bare scaffold to publishable plugin.
+- v1.0.0 MVP (Phases 1-6) — shipped 2026-03-18
+- v1.1.0 Agentic Era (Phases 7-11) — shipped 2026-03-18
+- v1.2.0 Full Journey (Phases 12-13) — shipped 2026-03-19
 
 ## Phases
 
-- [x] **Phase 1: Plugin Scaffold** - Directory structure, manifest, and project identity
-- [x] **Phase 2: Framework Agents** - 8 built-in thinking framework agent definitions
-- [x] **Phase 3: Orchestration Agents** - T1 validator and cycle auditor
-- [x] **Phase 4: Skills** - validate-approach, think-cycle, evidence-audit SKILL.md files
-- [x] **Phase 5: Slash Commands** - /validate, /think, /audit command entry points
-- [x] **Phase 6: Testing & Polish** - End-to-end verification, README, publish prep
-
-## Phase Details
+<details>
+<summary>v1.0.0 MVP (Phases 1-6) — SHIPPED 2026-03-18</summary>
 
 ### Phase 1: Plugin Scaffold
-**Goal**: Establish plugin directory structure, package.json manifest, and CLAUDE.md
-**Depends on**: Nothing (first phase)
-**Plans**: 1 plan
-
-Plans:
-- [ ] 01-01: Create plugin manifest, directory tree, and project CLAUDE.md
+- [x] 01-01: Plugin manifest, directory tree, CLAUDE.md
 
 ### Phase 2: Framework Agents
-**Goal**: Write all 8 built-in thinking framework agent definitions
-**Depends on**: Phase 1 (directory structure exists)
-**Plans**: 2 plans (4 agents each to stay within scope limits)
-
-Plans:
-- [ ] 02-01: First Principles, Inversion, 5-Whys, Occam's Razor agents
-- [ ] 02-02: Via Negativa, One Thing, Deep Dive, Technical Research agents
+- [x] 02-01: First Principles, Inversion, 5-Whys, Occam's Razor
+- [x] 02-02: Via Negativa, One Thing, Deep Dive, Technical Research
 
 ### Phase 3: Orchestration Agents
-**Goal**: Build the T1 pre-execution validator and per-cycle audit orchestrator
-**Depends on**: Phase 2 (framework agents exist to be dispatched)
-**Plans**: 1 plan
-
-Plans:
-- [ ] 03-01: T1 validator agent and cycle-auditor agent
+- [x] 03-01: T1 validator and cycle auditor
 
 ### Phase 4: Skills
-**Goal**: Create SKILL.md files for validate-approach, think-cycle, and evidence-audit
-**Depends on**: Phase 3 (orchestration agents exist)
-**Plans**: 2 plans
-
-Plans:
-- [ ] 04-01: validate-approach and think-cycle skills
-- [ ] 04-02: evidence-audit skill
+- [x] 04-01: validate-approach and think-cycle skills
+- [x] 04-02: evidence-audit skill
 
 ### Phase 5: Slash Commands
-**Goal**: Create slash command entry points that invoke the skills
-**Depends on**: Phase 4 (skills exist to be invoked)
-**Plans**: 1 plan
-
-Plans:
-- [ ] 05-01: /validate, /think, and /audit commands
+- [x] 05-01: /validate, /think, /audit commands
 
 ### Phase 6: Testing & Polish
-**Goal**: End-to-end verification, README documentation, and publish preparation
-**Depends on**: Phase 5 (all components exist)
-**Plans**: 1 plan
+- [x] 06-01: Structural verification, README, v1.0.0 tag
 
-Plans:
-- [ ] 06-01: Integration test, README, and marketplace prep
+</details>
+
+<details>
+<summary>v1.1.0 Agentic Era (Phases 7-11) — SHIPPED 2026-03-18</summary>
+
+### Phase 7: Research
+- [x] 07-01: External research (5 new agent value) + internal research (style patterns)
+
+### Phase 8: P0 Manifest
+- [x] 08-01: .claude-plugin/plugin.json + hooks.json
+
+### Phase 9: New Agents
+- [x] 09-01: 6 Thinking Hats, Gap Finder, Blind Spot, Devil's Advocate, Drift Detector
+
+### Phase 10: Phase-Aware Defaults
+- [x] 10-01: Update skills with phase-aware framework selection
+
+### Phase 11: Examples & P2
+- [x] 11-01: examples/, multi-platform configs, validation script
+
+</details>
+
+### v1.2.0 Full Journey — SHIPPED 2026-03-19
+
+#### Phase 12: Command Journey
+- [x] 12-01: /brainstorm, /consider, /review, /frameworks commands + skills
+
+#### Phase 13: Polish & Docs
+- [x] 13-01: README polish, LICENSE, CONTRIBUTING.md, CHANGELOG, session handoff, Gemini CLI support
 
 ## Progress
 
-| Phase | Plans Complete | Status | Completed |
-|-------|----------------|--------|-----------|
-| 1. Plugin Scaffold | 1/1 | Complete | 2026-03-18 |
-| 2. Framework Agents | 2/2 | Complete | 2026-03-18 |
-| 3. Orchestration Agents | 1/1 | Complete | 2026-03-18 |
-| 4. Skills | 2/2 | Complete | 2026-03-18 |
-| 5. Slash Commands | 1/1 | Complete | 2026-03-18 |
-| 6. Testing & Polish | 1/1 | Complete | 2026-03-18 |
+| Phase | Milestone | Plans Complete | Status | Completed |
+|-------|-----------|----------------|--------|-----------|
+| 1-6 | v1.0.0 | 8/8 | Complete | 2026-03-18 |
+| 7-11 | v1.1.0 | 5/5 | Complete | 2026-03-18 |
+| 12-13 | v1.2.0 | 2/2 | Complete | 2026-03-19 |
+
+## What's Next (v1.3.0 — Not Started)
+
+- [ ] Push to GitHub and create public repo
+- [ ] Test plugin on real project (ProSure or iVal)
+- [ ] End-to-end integration test of all 7 commands
+- [ ] README GIFs / screenshots for visual documentation
