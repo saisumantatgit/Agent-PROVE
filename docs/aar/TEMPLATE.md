@@ -37,6 +37,29 @@
 | **Participants**     | [agents / humans involved]             |
 | **Git range**        | [start-SHA..end-SHA or tag range]      |
 
+## Zone Check
+
+<!--
+  Quick RAG status. Fill this BEFORE writing the rest of the AAR.
+  Forces honest assessment upfront.
+-->
+
+| Dimension | Status | Notes |
+|-----------|--------|-------|
+| **Delivery** | 🟢 GREEN / 🟡 AMBER / 🔴 RED | [On track / delayed / blocked] |
+| **Quality** | 🟢 GREEN / 🟡 AMBER / 🔴 RED | [Validation passing / warnings / failures] |
+| **Scope** | 🟢 GREEN / 🟡 AMBER / 🔴 RED | [As planned / minor drift / major drift] |
+
+---
+
+## When to Write an AAR
+
+- After completing a plugin milestone (v1.x.0 tag)
+- After a significant phase gate (new category of agents, new command set)
+- After a session with 20+ sub-agent dispatches
+- After any event where the plan significantly diverged from reality
+- After incorporating major external feedback
+
 ---
 
 ## 1. Purpose
@@ -44,6 +67,10 @@
 <!--
   One paragraph: what milestone, phase gate, or significant event
   triggered this AAR? What scope does it cover?
+
+  Example: "This AAR covers the v1.1.0 milestone — adding 5 agentic
+  audit frameworks and phase-aware defaults to the Thinking Framework
+  Orchestrator plugin."
 -->
 
 ---
@@ -56,6 +83,11 @@
 -->
 
 ### 2.1 Planned Deliverables
+
+<!--
+  Example row:
+  | 1 | 5 new framework agents (gap-finder, blind-spot, etc.) | 2026-03-18 | .planning/ROADMAP.md Phase 9 |
+-->
 
 | # | Deliverable                  | Target date | Source reference    |
 |---|------------------------------|-------------|---------------------|
@@ -116,6 +148,11 @@
 -->
 
 ### 4.1 Positive Variances (better than expected)
+
+<!--
+  Example row:
+  | Parallel dispatch 8 agents completed in 2min vs 15min sequential | Independent agent architecture | Yes — any N-independent-agent task |
+-->
 
 | Variance | Root cause | Reproducible? |
 | -------- | ---------- | ------------- |
@@ -231,10 +268,9 @@
   Each item should be tracked to closure.
 -->
 
-| # | Action                       | Owner        | Due date   | Status |
-|---|------------------------------|--------------|------------|--------|
-| 1 |                              |              |            | Open   |
-| 2 |                              |              |            | Open   |
+| # | Action | Priority | Owner | Due date | Status |
+|---|--------|----------|-------|----------|--------|
+| 1 |        | P0/P1/P2 |       |          | Open   |
 
 ---
 
@@ -262,6 +298,28 @@
 - ADRs: [ADR-NNN links]
 - Research docs: [docs/research/... links]
 - External: [URLs or citations]
+
+## 10. Handoff to Next Milestone
+
+<!--
+  Light handoff: what does the next AAR's author need to know?
+  Not a full session handoff — just the strategic thread.
+-->
+
+- Next milestone: [v1.x.0 — what it targets]
+- Carry-forward risks: [from Section 4.2]
+- Unresolved action items: [from Section 7]
+
+## 11. Read Order for Next Session
+
+<!--
+  If someone is picking up this project, what should they read first?
+  Ordered from most to least important.
+-->
+
+1. [Most critical file/doc]
+2. [Second most critical]
+3. [Third]
 
 ---
 

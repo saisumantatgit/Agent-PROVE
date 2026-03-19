@@ -34,6 +34,55 @@
 
 ---
 
+## Zone Check
+
+<!--
+  Quick pulse check. Fill at START of session, update at END.
+
+  Example:
+  | Dimension | Start | End | Notes |
+  |-----------|-------|-----|-------|
+  | Momentum | 🟢 GREEN | 🟡 AMBER | Slowed after GAI feedback review |
+  | Quality | 🟢 GREEN | 🟢 GREEN | Validation passing throughout |
+  | Scope | 🟢 GREEN | 🟡 AMBER | Added 4 commands not in original plan |
+-->
+
+| Dimension | Start | End | Notes |
+|-----------|-------|-----|-------|
+| **Momentum** | 🟢/🟡/🔴 | 🟢/🟡/🔴 | |
+| **Quality** | 🟢/🟡/🔴 | 🟢/🟡/🔴 | |
+| **Scope** | 🟢/🟡/🔴 | 🟢/🟡/🔴 | |
+
+---
+
+## When to Write a Logbook Entry
+
+- At the end of every working session (non-negotiable)
+- Mid-session if switching tracks or context is getting complex
+- Before handing off to a different agent or person
+
+---
+
+## WIP Tracking
+
+<!--
+  What's in progress RIGHT NOW? Update as you work.
+  Mark items ✅ when done, ❌ if abandoned, ⏸️ if paused.
+
+  Example:
+  | # | Item | Status | Notes |
+  |---|------|--------|-------|
+  | 1 | Build gap-finder agent | ✅ Done | 68 lines, follows canonical template |
+  | 2 | Update phase-aware defaults | ⏸️ Paused | Waiting on agent builds to finish |
+  | 3 | Add Gemini support | ❌ Deferred | Moving to next session |
+-->
+
+| # | Item | Status | Notes |
+|---|------|--------|-------|
+| 1 | | | |
+
+---
+
 ## Objective
 
 <!-- One or two sentences: what were you trying to accomplish this session? -->
@@ -60,6 +109,11 @@
   Chronological list of what you actually did.
   Keep it factual — opinions go in "Observations" below.
   Reference file paths, commit SHAs, and command outputs.
+
+  Example:
+  1. **14:30** — Dispatched 8 parallel agents to build framework agents (first-principles through technical-research)
+  2. **14:35** — All 8 agents returned. Verified structural compliance with validate-structure.sh
+  3. **14:40** — Fixed domain leakage: grep found "EBA" reference in evidence-audit example
 -->
 
 1. **[HH:MM]** — [Action taken]
@@ -111,6 +165,11 @@
 <!--
   Subjective notes: what surprised you, what felt fragile,
   what you'd investigate further if you had time.
+
+  Example:
+  - Parallel dispatch of 8 agents completed in ~3 minutes — faster than expected
+  - The GAI reviewer's feedback assumed LangGraph architecture — not applicable to our markdown-only plugin
+  - Keep/Merge/Prune reduced 12 proposed ADRs to 4 — good discipline
 -->
 
 -
@@ -199,6 +258,25 @@
 | Sub-agents dispatched     |       |
 | Avg tokens per sub-agent  |       |
 | Wall-clock time           |       |
+
+---
+
+## Read Order for Next Session
+
+<!--
+  If a fresh agent picks up from here, what should they read?
+  Order matters — most important first.
+
+  Example:
+  1. This logbook entry (you're reading it)
+  2. CLAUDE.md (architecture and conventions)
+  3. .planning/ROADMAP.md (current milestone and phases)
+  4. Last AAR (lessons from previous milestone)
+-->
+
+1. [This entry]
+2. [Most critical reference]
+3. [Second reference]
 
 ---
 

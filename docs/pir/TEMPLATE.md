@@ -54,6 +54,35 @@
 
 ---
 
+## Zone Check
+
+<!--
+  Immediate RAG assessment. Fill BEFORE detailed analysis.
+-->
+
+| Dimension | Status | Notes |
+|-----------|--------|-------|
+| **Severity** | 🔴 P0 / 🟠 P1 / 🟡 P2 / 🟢 P3 | [Initial assessment — may change after analysis] |
+| **Containment** | 🟢 Contained / 🔴 Active | [Is the incident still happening?] |
+| **Blast Radius** | [scope] | [Which agents/commands/skills/users affected? What ELSE could this break?] |
+
+---
+
+## When to Write a PIR
+
+Write a PIR when any of these occur:
+- Evidence protocol violation reaches a user (shipped uncited inference)
+- Domain-specific content leaks into a public agent
+- Agent template missing required sections (frontmatter, evidence requirement, verdict)
+- Orchestrator dispatches wrong frameworks or loses context
+- Phase-aware defaults produce incorrect framework selection
+- Validation script fails to catch a structural issue that ships
+- Any incident that erodes trust in the plugin's core differentiators
+
+**Do NOT write a PIR for:** cosmetic issues, documentation typos, or problems caught before commit. Use the logbook for those.
+
+---
+
 ## 1. Executive Summary
 
 <!--
@@ -249,6 +278,29 @@
 | Skills affected            | [count and names]                      |
 | Users affected             | [none / count / "all"]                 |
 | Duration of impact         | [time]                                 |
+
+### 7.1.5 Blast Radius Assessment
+
+<!--
+  Beyond the direct impact — what ELSE could this incident affect?
+  Think: if this agent template was wrong, what other agents reference it?
+  If this evidence violation shipped, what other outputs cite the same source?
+
+  Example:
+  | Radius | Affected | How |
+  |--------|----------|-----|
+  | Direct | devils-advocate.md | Missing verdict section |
+  | Adjacent | cycle-auditor.md | Dispatches devils-advocate; would receive malformed output |
+  | Downstream | /think command | Would present incomplete audit to user |
+  | Potential | /review command | Combines /think output — cascade failure |
+-->
+
+| Radius | Affected | How |
+|--------|----------|-----|
+| Direct | | |
+| Adjacent | | |
+| Downstream | | |
+| Potential (if undetected) | | |
 
 ### 7.2 Token Cost of Incident
 
