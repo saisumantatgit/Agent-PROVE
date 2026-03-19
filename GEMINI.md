@@ -1,4 +1,4 @@
-# Thinking Framework Orchestrator — Gemini CLI
+# Agent-PROVE — Gemini CLI
 
 This plugin provides 14 thinking framework agents, 7 commands, and 6 skills for structured validation and auditing.
 

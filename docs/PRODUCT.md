@@ -1,8 +1,11 @@
-# Thinking Framework Orchestrator
+# Agent-PROVE
+
+> **Protocol for Real-time Objective Verification & Evidence**
+> Thinking Framework Orchestrator for AI agent workflows — build and ship products with confidence.
 
 **Your code is only as good as the thinking behind it.**
 
-Most AI agents execute first and debug later. This plugin makes them *think first* — stress-testing every approach with battle-tested mental models before a single line of code is written, and auditing every output during execution with zero tolerance for uncited claims.
+Most AI agents execute first and debug later. Agent-PROVE makes them *think first* — stress-testing every approach with battle-tested mental models before a single line of code is written, and auditing every output during execution with zero tolerance for uncited claims.
 
 ---
 
@@ -12,7 +15,7 @@ You've seen it happen: an agent charges ahead with a flawed approach, produces 5
 
 Mission 1086 solved this. A project that classified 1,086 regulatory data points caught a critical "wrong data source" error *before execution began* — because a First Principles agent asked: "What IS the authoritative source? Are we sure?" That one question saved days of rework.
 
-This plugin extracts that methodology and makes it available for *every* project.
+Agent-PROVE extracts that methodology and makes it available for *every* project.
 
 ---
 
@@ -53,7 +56,7 @@ Every command exists because it serves a distinct user moment. No redundancy, no
 
 ### Pure Markdown. Zero Dependencies.
 
-No build step. No compiled code. No npm install. The entire plugin is structured prompts — agent definitions that tell Claude *how to think*, not what to think. Install it by copying a folder. Extend it by dropping a markdown file.
+No build step. No compiled code. No npm install. The entire system is structured prompts — agent definitions that tell Claude *how to think*, not what to think. Install it by copying a folder. Extend it by dropping a markdown file.
 
 **This is intentional.** The value isn't in code — it's in the *quality of the questions asked*. First Principles (Aristotle, 4th century BC) doesn't need a TypeScript wrapper.
 
@@ -119,7 +122,7 @@ This isn't optional. A single uncited inference fails the audit. Not a warning. 
 
 ## Built on Battle-Tested Methodology
 
-This isn't theoretical. The thinking framework orchestration pattern was developed and validated during Mission 1086 — a project that classified 1,086 regulatory data points across 3,582 taxonomy files with **zero uncited inference**. The T1 validator caught the critical error before execution began. Per-cycle framework agents found 32 retired metrics, 4 misclassifications, and recommended structural simplifications during execution.
+This isn't theoretical. The Agent-PROVE orchestration pattern was developed and validated during Mission 1086 — a project that classified 1,086 regulatory data points across 3,582 taxonomy files with **zero uncited inference**. The T1 validator caught the critical error before execution began. Per-cycle framework agents found 32 retired metrics, 4 misclassifications, and recommended structural simplifications during execution.
 
 The methodology is domain-agnostic. The rigour is universal.
 
@@ -135,7 +138,7 @@ Every top Claude Code plugin owns ONE thing:
 | BMAD | Full agile lifecycle (personas, phase gates) | 41K |
 | GSD | Context engineering (fresh windows, wave execution) | 34K |
 | claude-mem | Persistent cross-session memory | 38K |
-| **This plugin** | **Structured, evidence-based thinking** | — |
+| **Agent-PROVE** | **Structured, evidence-based thinking** | — |
 
 We don't enforce TDD — Superpowers does that. We don't manage sprints — BMAD does that. We don't manage context windows — GSD does that. We don't persist memory — claude-mem does that.
 

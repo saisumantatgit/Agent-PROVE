@@ -1,7 +1,7 @@
 {
-  "name": "thinking-framework-orchestrator",
+  "name": "agent-prove",
   "version": "1.2.0",
-  "description": "Multi-framework thinking validation, per-cycle auditing, and evidence-based accountability for Claude Code. 14 frameworks, 7 commands, phase-aware defaults.",
+  "description": "Agent-PROVE — Multi-framework thinking validation, per-cycle auditing, and evidence-based accountability for Claude Code. 14 frameworks, 7 commands, phase-aware defaults.",
   "keywords": [
     "claude-code-plugin",
     "thinking-frameworks",
@@ -16,6 +16,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/saisumanthbattepati/thinking-framework-orchestrator"
+    "url": "https://github.com/saisumantatgit/Agent-PROVE"
   }
 }

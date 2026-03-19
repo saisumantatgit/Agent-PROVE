@@ -1,6 +1,7 @@
-# Thinking Framework Orchestrator
+# Agent-PROVE
 
-> **Your code is only as good as the thinking behind it.**
+> **Protocol for Real-time Objective Verification & Evidence**
+> Thinking Framework Orchestrator for AI agent workflows — build and ship products with confidence.
 
 A Claude Code plugin that makes AI agents *think before they act* — 14 thinking frameworks across 6 categories, phase-aware dispatch, evidence protocol enforcement, and a dedicated audit suite for catching the ways AI agents fail.
 
@@ -17,7 +18,7 @@ A Claude Code plugin that makes AI agents *think before they act* — 14 thinkin
 
 You've seen it happen: an agent charges ahead with a flawed approach, produces 500 lines of code, then you discover the foundational assumption was wrong. Hours wasted. Context burned.
 
-This plugin fixes that. It validates approaches *before* execution, audits outputs *during* execution, and catches the 4 specific ways AI agents fail:
+Agent-PROVE fixes that. It validates approaches *before* execution, audits outputs *during* execution, and catches the 4 specific ways AI agents fail:
 
 | Agent Failure Mode | Framework That Catches It |
 |---|---|
@@ -28,14 +29,29 @@ This plugin fixes that. It validates approaches *before* execution, audits outpu
 
 ---
 
+## Why Agent-PROVE?
+
+Every top Claude Code plugin owns ONE thing:
+
+| Plugin | What It Owns |
+|--------|-------------|
+| **Superpowers** (95K★) | Developer discipline — TDD, code review |
+| **BMAD** (41K★) | Agile lifecycle — personas, phase gates |
+| **GSD** (34K★) | Context engineering — fresh windows, wave execution |
+| **Agent-PROVE** | **Structured evidence-based thinking** — prove it or it fails |
+
+We don't enforce TDD. We don't manage sprints. We don't manage context windows. **We make agents think before they act, prove their work while they act, and catch their own blind spots after they act.**
+
+---
+
 ## Installation
 
 ```bash
-# Clone the repo
-git clone https://github.com/saisumanthbattepati/thinking-framework-orchestrator.git
+# Clone
+git clone https://github.com/saisumantatgit/Agent-PROVE.git
 
-# Copy to your plugins directory
-cp -r thinking-framework-orchestrator/ ~/.claude/plugins/thinking-framework-orchestrator/
+# Install as Claude Code plugin
+cp -r Agent-PROVE/ ~/.claude/plugins/agent-prove/
 ```
 
 Or add to your project's `.claude/plugins/` directory for project-scoped use.
@@ -228,7 +244,7 @@ The methodology is domain-agnostic. The rigour is universal.
 
 ## Prior Art
 
-Framework names reference well-known mental models (First Principles — Aristotle, Inversion — Munger/Stoics, 5-Whys — Toyota, Occam's Razor — 14th century, Via Negativa — Taleb, One Thing — Keller). The [`consider/` commands](https://github.com/glittercowboy/taches-cc-resources) in taches-cc-resources by Lex Christopherson apply similar models as conversational prompts — this plugin builds a different thing: structured orchestration with evidence-based accountability. See [ADR-001](docs/adr/001-framework-naming-and-prior-art.md) for the full assessment.
+Framework names reference well-known mental models (First Principles — Aristotle, Inversion — Munger/Stoics, 5-Whys — Toyota, Occam's Razor — 14th century, Via Negativa — Taleb, One Thing — Keller). The [`consider/` commands](https://github.com/glittercowboy/taches-cc-resources) in taches-cc-resources by Lex Christopherson apply similar models as conversational prompts — Agent-PROVE builds a different thing: structured orchestration with evidence-based accountability. See [ADR-001](docs/adr/001-framework-naming-and-prior-art.md) for the full assessment.
 
 ---
 

@@ -2,7 +2,7 @@
   "hooks": [
     {
       "type": "SessionStart",
-      "command": "echo '🧠 Thinking Framework Orchestrator loaded. Commands: /validate, /think, /audit'"
+      "command": "echo '🧠 Agent-PROVE loaded. Commands: /brainstorm, /validate, /consider, /think, /audit, /review, /frameworks'"
     }
   ]
 }

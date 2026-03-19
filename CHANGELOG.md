@@ -1,6 +1,6 @@
-# Changelog
+# Changelog — Agent-PROVE
 
-All notable changes to the Thinking Framework Orchestrator.
+All notable changes to Agent-PROVE.
 
 ## [1.2.0] - 2026-03-19
 

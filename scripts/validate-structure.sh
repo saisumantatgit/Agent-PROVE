@@ -1,11 +1,11 @@
 #!/bin/bash
-# Validate Thinking Framework Orchestrator plugin structure
+# Validate Agent-PROVE plugin structure
 # Run: bash scripts/validate-structure.sh
 
 ERRORS=0
 WARNINGS=0
 
-echo "=== Thinking Framework Orchestrator: Structure Validation ==="
+echo "=== Agent-PROVE: Structure Validation ==="
 echo ""
 
 # Check manifest

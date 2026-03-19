@@ -1,6 +1,6 @@
-# Thinking Framework Orchestrator
+# Agent-PROVE
 
-A Claude Code plugin that applies structured multi-framework thinking to validate approaches before execution, audit outputs during execution, and enforce evidence-based accountability. Extracted from the Mission 1086 methodology.
+Agent-PROVE is a Claude Code plugin that applies structured multi-framework thinking to validate approaches before execution, audit outputs during execution, and enforce evidence-based accountability. Extracted from the Mission 1086 methodology.
 
 ## Architecture
 
