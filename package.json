@@ -1,16 +1,26 @@
 {
   "name": "agent-prove",
   "version": "1.2.0",
-  "description": "Agent-PROVE — Multi-framework thinking validation, per-cycle auditing, and evidence-based accountability for Claude Code. 14 frameworks, 7 commands, phase-aware defaults.",
+  "description": "Agent-PROVE — Evaluate any approach from 14 thinking frameworks before writing a single line of code. Multi-framework validation, per-cycle auditing, and evidence-based accountability for Claude Code.",
   "keywords": [
     "claude-code-plugin",
     "thinking-frameworks",
     "validation",
+    "evaluate",
+    "assess",
+    "approach-evaluation",
+    "architecture-review",
+    "design-review",
+    "decision-framework",
+    "structured-thinking",
+    "multi-framework",
     "audit",
     "evidence-protocol",
     "agentic-audit",
     "first-principles",
-    "devils-advocate"
+    "devils-advocate",
+    "pre-flight-check",
+    "code-assessment"
   ],
   "author": "Sai Sumanth Battepati",
   "license": "MIT",

@@ -1,7 +1,7 @@
 {
   "name": "agent-prove",
-  "description": "Agent-PROVE — Multi-framework thinking validation, per-cycle auditing, and evidence-based accountability for Claude Code. 14 frameworks across 6 phases — the only thinking framework plugin built for the agentic era.",
-  "version": "1.1.0",
+  "description": "Agent-PROVE — Evaluate and assess any approach from 14 thinking frameworks before writing a single line of code. Multi-framework validation, architecture review, decision analysis, and evidence-based accountability for Claude Code.",
+  "version": "1.2.1",
   "author": {
     "name": "Sai Sumanth Battepati"
   },
@@ -10,11 +10,21 @@
   "keywords": [
     "claude-code-plugin",
     "thinking-frameworks",
+    "evaluate",
+    "assess",
+    "approach-evaluation",
+    "architecture-review",
+    "design-review",
+    "decision-framework",
+    "structured-thinking",
+    "multi-framework",
     "validation",
     "audit",
     "evidence-protocol",
     "agentic-audit",
     "first-principles",
-    "devils-advocate"
+    "devils-advocate",
+    "pre-flight-check",
+    "code-assessment"
   ]
 }
