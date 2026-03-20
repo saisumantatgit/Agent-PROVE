@@ -99,6 +99,20 @@ No registration, no config changes, no orchestrator modification needed.
 | Simplifies or removes | Refinement |
 | Audits AI-generated work specifically | Agentic Audit |
 
+## Submitting Changes
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/your-feature`)
+3. Make your changes following the conventions above
+4. Commit with a descriptive message (`git commit -m "Add: description of change"`)
+5. Push to your fork (`git push origin feature/your-feature`)
+6. Open a Pull Request against `main`
+
+Pull requests should include:
+- Description of what changed and why
+- Any testing you performed
+- Reference to related issues (if applicable)
+
 ## Reporting Issues
 
 Open an issue on GitHub with:

@@ -1,6 +1,6 @@
 {
   "name": "agent-prove",
   "description": "Agent-PROVE — Multi-framework thinking validation, per-cycle auditing, and evidence-based accountability. 14 frameworks across 6 phases.",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "contextFileName": "GEMINI.md"
 }

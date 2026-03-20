@@ -6,7 +6,7 @@ arguments:
     description: What to analyze (inline text or @file_path)
     required: false
   - name: --frameworks
-    description: Number of frameworks to apply (default 3)
+    description: Number of frameworks to apply (default 5)
     required: false
   - name: --framework-names
     description: Comma-separated list of specific framework names

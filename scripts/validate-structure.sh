@@ -48,6 +48,38 @@ for cmd in .claude/commands/*.md; do
     head -1 "$cmd" | grep -q "^---" && echo "✅ $name: has frontmatter" || { echo "❌ $name: missing frontmatter"; ERRORS=$((ERRORS+1)); }
 done
 
+# Version consistency check
+echo ""
+echo "--- Version Consistency ---"
+CANONICAL_VERSION=$(python3 -c "import json; print(json.load(open('package.json'))['version'])" 2>/dev/null)
+if [ -n "$CANONICAL_VERSION" ]; then
+    echo "Canonical version (package.json): $CANONICAL_VERSION"
+    for pj in .claude-plugin/plugin.json .codex/plugin.json .cursor-plugin/plugin.json .opencode/plugin.json; do
+        if [ -f "$pj" ]; then
+            V=$(python3 -c "import json; print(json.load(open('$pj'))['version'])" 2>/dev/null)
+            if [ "$V" != "$CANONICAL_VERSION" ]; then
+                echo "⚠️  $pj version $V != package.json version $CANONICAL_VERSION"
+                WARNINGS=$((WARNINGS + 1))
+            else
+                echo "✅ $pj: $V"
+            fi
+        fi
+    done
+    # Also check gemini-extension.json
+    if [ -f "gemini-extension.json" ]; then
+        V=$(python3 -c "import json; print(json.load(open('gemini-extension.json'))['version'])" 2>/dev/null)
+        if [ "$V" != "$CANONICAL_VERSION" ]; then
+            echo "⚠️  gemini-extension.json version $V != package.json version $CANONICAL_VERSION"
+            WARNINGS=$((WARNINGS + 1))
+        else
+            echo "✅ gemini-extension.json: $V"
+        fi
+    fi
+else
+    echo "⚠️  Could not read version from package.json"
+    WARNINGS=$((WARNINGS + 1))
+fi
+
 # Check for domain-specific leakage
 echo ""
 echo "--- Domain Leakage Check ---"

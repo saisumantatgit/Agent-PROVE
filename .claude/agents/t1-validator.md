@@ -14,7 +14,7 @@ You will receive:
 - **APPROACH**: The proposed approach (numbered steps) to validate
 - **CONTEXT**: What exists, what's been tried, key numbers, relevant background
 - **INPUT_FILES**: File paths for framework agents to read
-- **FRAMEWORKS**: Which framework agents to dispatch (default: first-principles, inversion, five-whys, occams-razor, via-negativa)
+- **FRAMEWORKS**: Which framework agents to dispatch (default: six-thinking-hats, first-principles, five-whys, inversion, occams-razor)
 - **FRAMEWORK_COUNT**: How many frameworks to apply (default: 5)
 
 ## Your Task

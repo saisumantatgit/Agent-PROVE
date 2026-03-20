@@ -10,7 +10,7 @@ Dispatch thinking framework agents to audit the output of an execution cycle. En
 ## Arguments
 
 - **SUBJECT** (required): What to analyze — problem statement, cycle output, or `@file_path`
-- `--frameworks N`: Number of frameworks to apply (default: 3)
+- `--frameworks N`: Number of frameworks to apply (default: 5)
 - `--framework-names list`: Comma-separated framework names
 - `--input-files paths`: Comma-separated file paths for evidence verification
 - `--expected-count N`: Expected entry count for accountability check

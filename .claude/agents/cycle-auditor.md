@@ -14,8 +14,8 @@ You will receive:
 - **CYCLE_OUTPUT**: What was just produced (file path or inline content)
 - **CYCLE_CONTEXT**: What was expected — the cycle's objective and success criteria
 - **INPUT_FILES**: Files to verify against
-- **FRAMEWORKS**: Which framework agents to dispatch (default: first-principles, inversion, occams-razor)
-- **FRAMEWORK_COUNT**: How many frameworks to apply (default: 3)
+- **FRAMEWORKS**: Which framework agents to dispatch (default: deep-dive, tri-strike, gap-finder, devils-advocate, drift-detector)
+- **FRAMEWORK_COUNT**: How many frameworks to apply (default: 5)
 - **EXPECTED_COUNT**: Expected entry count for accountability check (optional)
 
 ## Your Task
