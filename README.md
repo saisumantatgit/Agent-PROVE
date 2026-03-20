@@ -248,6 +248,21 @@ Framework names reference well-known mental models (First Principles — Aristot
 
 ---
 
+## Part of the Agent Suite
+
+Agent-PROVE is one of six products in the Agent Suite for AI agent governance:
+
+| Product | Tagline | Purpose |
+|---------|---------|---------|
+| **Agent-PROVE** | **"Prove it or it fails."** | **Thinking validation — structured reasoning frameworks** |
+| [Agent-Trace](https://github.com/saisumantatgit/Agent-Trace) | "See the ripple effect before it happens." | Blast radius mapping — impact analysis before changes |
+| [Agent-Scribe](https://github.com/saisumantatgit/Agent-Scribe) | "Nothing is lost." | Session governance — capture decisions and context |
+| [Agent-Cite](https://github.com/saisumantatgit/Agent-Cite) | "Cite it or it's opinion." | Evidence enforcement — require citations for claims |
+| [Agent-Drift](https://github.com/saisumantatgit/Agent-Drift) | "Not on my watch." | Drift detection — catch when agents deviate from instructions |
+| [Agent-Litmus](https://github.com/saisumantatgit/Agent-Litmus) | "The test your tests have to pass." | Test quality governance — are tests protecting code? |
+
+---
+
 ## License
 
 [MIT](LICENSE)
